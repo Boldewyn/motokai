@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+      .header-outer {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .header {
+        background-color: white;
+        color: black;
+        margin: 2px;
+        border: 1px black solid;
+      }
+
+      .h-table,
+      #net-url,
+      #ch-url,
+      #dcc-chat-title {
+        width: 100%;
+      }
+
+      #splash {
+        padding-top: 300px;
+        padding-bottom: 185px;
+        font-size: 24pt;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      #cli-version-container {
+        text-align: center;
+        width: 100%;
+      }
+
+      #usr-descnodes,
+      #ch-topicnodes {
+        line-height: 110%;
+      }
+
+      #ch-usercount,
+      #ch-modestr,
+      #net-lag,
+      #dcc-file-progress {
+        white-space: nowrap;
+      }
+
+      .label {
+        font-weight: bold;
+        text-align: right;
+        vertical-align: top;
+        white-space: nowrap;
+        padding-right: 0.5em;
+      }
+
+      .value {
+        vertical-align: top;
+        padding-right: 1em;
+      }
+
+      #usr-title,
+      #usr-descnodes {
+        text-align: center;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="files/output-base-website.css" />
+    <link rel="stylesheet" type="text/css" href="motokai.css" />
+    <title>motokai, a dark ChatZilla motif</title>
+  </head>
+  <body class="chatzilla-body">
+    <div class="header-outer">
+      <div class="header" id="ch-container">
+        <table class="h-table">
+          <tbody>
+            <tr>
+              <td class="label" id="ch-url-l">URL</td>
+              <td class="value crop-right" id="ch-url">
+                <a id="ch-url-anchor" class="chatzilla-link" href="http://boldewyn.github.com/motokai/">http://boldewyn.github.com/motokai/</a>
+              </td>
+              <td class="label" id="ch-modestr-l">Mode</td>
+              <td class="value" id="ch-modestr">+ns</td>
+              <td class="label" id="ch-usercount-l">Users</td>
+              <td class="value" id="ch-usercount">71, 6@, 0+</td>
+            </tr>
+            <tr style="cursor: default;">
+              <td class="label" id="ch-topicnodes-l">Topic</td>
+              <td class="value" colspan="6">
+                <span id="ch-topicnodes"><span>motokai, a dark ChatZilla motif</span></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="messages-outer">
+      <div id="splash">#motokai</div>
+      <div id="output">
+        <table class="msg-table" view-type="IRCChannel"><tbody>
+          <tr class="msg" msg-type="PRIVMSG" mark="odd"><td class="msg-user"><a class="chatzilla-link" href="irc://irc.mozilla.org/Boldewyn,isnick"><span>Boldewyn</span></a></td><td class="msg-data"><span>motokai is a dark motif for ChatZilla</span></td></tr>
+          <tr class="msg" msg-type="PRIVMSG" mark="odd"><td class="msg-user"><a class="chatzilla-link" href="irc://irc.mozilla.org/Boldewyn,isnick"><span>Boldewyn</span></a></td><td class="msg-data"><span>it's based on <b>*Monokai*</b> for TextMate and <b>*Molokai*</b> for (g)Vim</span></td></tr>
+          <tr class="msg" msg-type="PRIVMSG" mark="even"><td class="msg-user"><a class="chatzilla-link" href="irc://irc.mozilla.org/Github,isnick"><span>github</span></a></td><td class="msg-data"><span>You can find it on <a href="http://boldewyn.github.com/motokai" class="chatzilla-link">http://boldewyn.github.com/motokai/</a></span></td></tr>
+          <tr class="msg" msg-type="PRIVMSG" mark="odd"><td class="msg-user"><a class="chatzilla-link" href="irc://irc.mozilla.org/Boldewyn,isnick"><span>Boldewyn</span></a></td><td class="msg-data"><span>motokai uses CSS3 animations for a smooth experience</span></td></tr>
+          <tr class="msg" msg-type="PRIVMSG" mark="even"><td class="msg-user"><a class="chatzilla-link" href="irc://irc.mozilla.org/Github,isnick"><span>github</span></a></td><td class="msg-data"><span>If you encounter any bug, please file it at <a href="http://github.com/Boldewyn/motokai/issues/" class="chatzilla-link">http://github.com/Boldewyn/motokai/issues/</a></span></td></tr>
+          <tr class="msg" msg-type="PRIVMSG" mark="odd"><td class="msg-user"><a class="chatzilla-link" href="irc://irc.mozilla.org/Boldewyn,isnick"><span>Boldewyn</span></a></td><td class="msg-data"><span>motokai features custom icons in the user view, e.g. for <img src="image/no-graphic.png" alt=""/> normal users or <img src="image/op-graphic.png" alt=""/> operators</span></td></tr>
+          <tr class="msg" msg-type="QUIT" mark="even"><td class="msg-type"><span>|&lt;--</span></td><td class="msg-data"><span>github has left moznet (Quit: back to controlling versions)</span></td></tr>
+          <tr class="msg" msg-type="JOIN" mark="odd"><td class="msg-type"><span>--&gt;|</span></td><td class="msg-data"><span>chatzilla (<a href="http://chatzilla.hacksrus.com/" class="chatzilla-link">http://chatzilla.hacksrus.com/</a>) has joined <a href="http://boldewyn.github.com/motokai/" class="chatzilla-link">motokai</a></span></td></tr>
+          <tr class="msg" msg-type="PRIVMSG" mark="even"><td class="msg-user"><a class="chatzilla-link" href="irc://irc.mozilla.org/Boldewyn,isnick"><span>Boldewyn</span></a></td><td class="msg-data"><span>I hope you enjoy this new ChatZilla experience <img src="files/face-smile.png" alt=":-)"/></span></td></tr>
+          <tr class="msg" msg-type="NICK" mark="odd"><td class="msg-type"><span>=-=</span></td><td class="msg-data"><span>DefMotif is now known as motokai</span></td></tr>
+          <tr class="msg" msg-type="ACTION" mark="even"><td class="msg-user"><a class="chatzilla-link" href="irc://irc.mozilla.org/Boldewyn,isnick"><span>Boldewyn</span></a></td><td class="msg-data"><span>uses motokai as default motif now</span></td></tr>
+          <tr class="msg" msg-type="ERROR"><td class="msg-type"><span>[ERROR]</span></td><td class="msg-data"><span>Sample ERROR message, &lt;<a href="http://testurl.com/foo.html" class="chatzilla-link" target="_content">http://testurl.com/foo.html</a>&gt;.</span></td></tr>
+          <tr class="msg" msg-type="NOTICE" msg-dest="motokai ME!" dest-type="IRCUser" view-type="IRCChannel" mark="odd"><td class="msg-user"><span>motokai</span></td><td class="msg-data"><span>Notice message from IRCUser “motokai” to you, &lt;<a href="http://testurl.com/foo.html" class="chatzilla-link" target="_content">http://testurl.com/<wbr>foo.html<wbr></a>&gt;.</span></td></tr>
+          <tr class="msg" msg-type="PRIVMSG" mark="even"><td class="msg-user"><a class="chatzilla-link" href="irc://irc.mozilla.org/Boldewyn,isnick"><span>Boldewyn</span></a></td><td class="msg-data"><span>You can examine the full ChatZilla test set at <a class="chatzilla-link" href="http://boldewyn.github.com/motokai/test.html">http://boldewyn.github.com/motokai/test.html</a></span></td></tr>
+          <tr class="msg" msg-type="QUIT" mark="odd"><td class="msg-type"><span>|&lt;--</span></td><td class="msg-data"><span>Boldewyn has left moznet (Quit: working on motokai)</span></td></tr>
+        </tbody></table>
+      </div>
+    </div>
+  </body>
+</html>
