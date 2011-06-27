@@ -124,22 +124,22 @@ treechildren {
 }
 
 #chatzilla-window #user-list[mode="graphic"] treechildren::-moz-tree-image {
-  list-style-image: url("no-graphic.png") !important;
+  list-style-image: url("image/no-graphic.png") !important;
 }
 #chatzilla-window #user-list[mode="graphic"] treechildren::-moz-tree-image(voice-true) {
-  list-style-image: url("voice-graphic.png") !important;
+  list-style-image: url("image/voice-graphic.png") !important;
 }
 #chatzilla-window #user-list[mode="graphic"] treechildren::-moz-tree-image(halfop-true) {
-  list-style-image: url("halfop-graphic.png") !important;
+  list-style-image: url("image/halfop-graphic.png") !important;
 }
 #chatzilla-window #user-list[mode="graphic"] treechildren::-moz-tree-image(op-true) {
-  list-style-image: url("op-graphic.png") !important;
+  list-style-image: url("image/op-graphic.png") !important;
 }
 #chatzilla-window #user-list[mode="graphic"] treechildren::-moz-tree-image(admin-true) {
-  list-style-image: url("admin-graphic.png") !important;
+  list-style-image: url("image/admin-graphic.png") !important;
 }
 #chatzilla-window #user-list[mode="graphic"] treechildren::-moz-tree-image(founder-true) {
-  list-style-image: url("founder-graphic.png") !important;
+  list-style-image: url("image/founder-graphic.png") !important;
 }
 
 /**
