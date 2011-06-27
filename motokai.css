@@ -1,0 +1,367 @@
+/**
+ * ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is Chatzilla.
+ *
+ * The Initial Developer of the Original Code is
+ * New Dimensions Consulting, Inc.
+ * Portions created by the Initial Developer are Copyright (C) 1999
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *   Robert Ginda, rginda@ndcico.com, original author
+ *   Manuel Strehl, boldewyn@googlemail.com, adaption of style to a dark motif
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+/* After making edits to this, use /sync-output to reload it in chatzilla */
+
+
+@import url(chrome://chatzilla/content/output-base.css);
+
+body.chatzilla-body {
+  background: #1B1D1E;
+  color: #F8F8F2;
+  font-family: "DejaVu Sans", sans-serif !important;
+}
+
+/**
+ * --------------------------------------------------------- global properties
+ */
+a.chatzilla-link {
+  color: #66D9EF;
+  border: 0px solid #1B1D1E;
+  -moz-transition: border-color, border-width;
+  -moz-transition-duration: .5s;
+}
+
+a.chatzilla-link:visited {
+  color: #66D9EF;
+}
+
+a.chatzilla-link:focus,
+a.chatzilla-link:hover {
+  text-decoration: none;
+  outline: none;
+  border-bottom: 1px solid;
+}
+
+.chatzilla-teletype {
+  font-family: "DejaVu Sans Mono", monospace;
+}
+
+/**
+ * -------------------------------------------------------------------- header
+ */
+.header-outer {
+  background-color: #1B1D1E;
+}
+
+.header {
+  color: #f8f8f2;
+  background-color: #333333;
+  border: none;
+  border-bottom: 1px solid #1B1D1E;
+  -moz-border-radius: 0;
+  font-size: 11px;
+  margin: 0;
+  box-shadow: 0 9px 9px rgba(0,0,0,.3);
+}
+
+.progress-fg {
+  background-color: silver;
+}
+
+.value {
+  color: silver;
+}
+
+/**
+ * ------------------------------------------------------------------ userlist
+ */
+treechildren {
+  color: #f8f8f2;
+  background-color: #232526;
+}
+
+#user-list treechildren::-moz-tree-cell-text(away-true) {
+  color: #465457 !important;
+}
+
+#chatzilla-window #user-list treechildren::-moz-tree-cell-text(away-false) {
+  color: #f8f8f2 !important;
+}
+
+#chatzilla-window #user-list treechildren::-moz-tree-row(selected) {
+  background-color: #000000 !important;
+}
+
+#chatzilla-window #user-list treechildren::-moz-tree-row(selected, focus) {
+  background-color: #293739 !important;
+  outline: none;
+}
+
+#chatzilla-window #user-list[mode="graphic"] treechildren::-moz-tree-image {
+  list-style-image: url("no-graphic.png") !important;
+}
+#chatzilla-window #user-list[mode="graphic"] treechildren::-moz-tree-image(voice-true) {
+  list-style-image: url("voice-graphic.png") !important;
+}
+#chatzilla-window #user-list[mode="graphic"] treechildren::-moz-tree-image(halfop-true) {
+  list-style-image: url("halfop-graphic.png") !important;
+}
+#chatzilla-window #user-list[mode="graphic"] treechildren::-moz-tree-image(op-true) {
+  list-style-image: url("op-graphic.png") !important;
+}
+#chatzilla-window #user-list[mode="graphic"] treechildren::-moz-tree-image(admin-true) {
+  list-style-image: url("admin-graphic.png") !important;
+}
+#chatzilla-window #user-list[mode="graphic"] treechildren::-moz-tree-image(founder-true) {
+  list-style-image: url("founder-graphic.png") !important;
+}
+
+/**
+ * -------------------------------------------------------------------- splash
+ */
+#splash {
+  color: #465457;
+  -moz-animation-duration: 3s;
+  -moz-animation-name: splash;
+}
+
+@-moz-keyframes splash {
+  from {
+    color: #F92672;
+  }
+  to {
+    color: #465457;
+  }
+}
+
+#usr-descnodes,
+#ch-topicnodes {
+  color: white;
+}
+
+/**
+ * ---------------------------------------------------------------- conditions
+ */
+[condition] {
+  font-weight: bold;
+}
+
+[condition="red"] {
+  color: #F92672;
+}
+
+[condition="yellow"] {
+  color: #FD971F;
+}
+
+[condition="green"] {
+  color: #A6E22E;
+}
+
+.chatzilla-rheet {
+  color: #F92672 !important;
+}
+
+.chatzilla-highlight[name="Slate"] {
+  color: white;
+  background: #15272d;
+}
+
+.chatzilla-highlight[name="Plum"] {
+  color: white;
+  background: #442144;
+}
+
+.chatzilla-highlight[name="Brown"] {
+  color: white;
+  background: #562a14;
+}
+
+/**
+ * ------------------------------------------------------------- message table
+ */
+.msg-table {
+  border-spacing: 0;
+}
+
+.msg-table td,
+.msg-table th {
+  padding: 4px 1px;
+}
+
+.msg-type {
+  color: #888A85;
+  background: #232526;
+}
+
+.msg-timestamp,
+.msg-user {
+  background: #232526;
+  color: #BCBCBC;
+}
+
+[mark="even"] + .msg[mark="odd"] td,
+[mark="odd"] + .msg[mark="even"] td {
+  border-top: 1px solid #1B1D1E;
+}
+
+.msg-user a.chatzilla-link,
+.msg-user {
+  color: #BCBCBC;
+}
+
+.msg-user::before,
+.msg-user::after {
+  color: #888A85;
+}
+
+.msg-table .msg-data {
+  padding-left: 5px;
+}
+
+.msg[msg-type="JOIN"] .msg-data,
+.msg[msg-type="PART"] .msg-data {
+  color: #66D9EF;
+}
+
+.msg[msg-type="HELLO"] .msg-data {
+  color: #e6db74;
+}
+
+.msg[msg-type="ERROR"] .msg-data,
+.msg[msg-type="DISCONNECT"] .msg-data {
+  background: #1E0010;
+  color: #960050;
+}
+
+.msg[msg-type="USAGE"] .msg-data {
+  color: white;
+}
+
+.msg[msg-type="ACTION"] .msg-data {
+  color: #e6db74;
+  font-style: italic;
+}
+
+.msg[msg-type="NICK"] .msg-data {
+  color: #A6E22E;
+}
+
+.msg[msg-type="NOTICE"] .msg-data,
+.msg[msg-type="MODE"] .msg-data {
+  color: #A6E22E;
+}
+
+.msg[msg-type="KICK"] .msg-data {
+  color: #ef5939;
+}
+
+.msg[msg-type="QUIT"] .msg-data {
+  color: #FD971F;
+}
+
+.msg[msg-type="STATUS"] .msg-data {
+  color: #AE81FF;
+}
+
+.msg[msg-type="JOIN"] .msg-data a.chatzilla-link,
+.msg[msg-type="PART"] .msg-data a.chatzilla-link,
+.msg[msg-type="NOTICE"] .msg-data a.chatzilla-link,
+.msg[msg-type="MODE"] .msg-data a.chatzilla-link,
+.msg[msg-type="KICK"] .msg-data a.chatzilla-link,
+.msg[msg-type="QUIT"] .msg-data a.chatzilla-link {
+  border-bottom: 1px solid;
+  color: inherit;
+}
+
+.msg[msg-type="JOIN"] .msg-data a.chatzilla-link:hover,
+.msg[msg-type="PART"] .msg-data a.chatzilla-link:hover,
+.msg[msg-type="NOTICE"] .msg-data a.chatzilla-link:hover,
+.msg[msg-type="MODE"] .msg-data a.chatzilla-link:hover,
+.msg[msg-type="KICK"] .msg-data a.chatzilla-link:hover,
+.msg[msg-type="QUIT"] .msg-data a.chatzilla-link:hover {
+  background: black;
+  -moz-transition-property: background;
+  -moz-transition-duration: .5s;
+}
+
+.msg[important="true"] .msg-user,
+.msg[important="true"] .msg-data {
+  font-weight: bold;
+  color: #BCA3A3;
+}
+
+.msg[msg-user$="ME!"] .msg-user:before,
+.msg[msg-user$="ME!"] .msg-user:after {
+  color: #f92672;
+}
+
+.msg[msg-type="ACTION"] .msg-user:before,
+.msg[msg-type="ACTION"] .msg-user:after {
+  color: #66D9EF;
+}
+
+.msg[msg-type="NOTICE"] .msg-user:before,
+.msg[msg-type="NOTICE"] .msg-user:after {
+  color: #A6E22E;
+}
+
+.msg[dest-type="IRCUser"] .msg-user:before,
+.msg[dest-type="IRCUser"] .msg-user:after {
+  color: #A6E22E;
+}
+
+.msg[msg-dest$="ME!"] .msg-user:before,
+.msg[msg-dest$="ME!"] .msg-user:after {
+  color: #AE81FF;
+}
+
+.msg[view-type="IRCUser"] .msg-user:before,
+.msg[view-type="IRCUser"] .msg-user:after {
+  color: white;
+}
+
+.msg[view-type="IRCUser"][msg-user$="ME!"] .msg-user:before,
+.msg[view-type="IRCUser"][msg-user$="ME!"] .msg-user:after {
+  color: #A6E22E;
+}
+
+
+.msg[msg-user="|"] .msg-data,
+.msg[msg-user="||"] .msg-data,
+.msg[msg-user="|||"] .msg-data,
+.msg[msg-user="]"] .msg-data,
+.msg[msg-user="["] .msg-data,
+.msg[msg-type="372"] .msg-data,
+.msg[msg-type="EVAL-IN"] .msg-data,
+.msg[msg-type="EVAL-OUT"] .msg-data {
+  font-family: "DejaVu Sans Mono", monospace;
+}
+
+
