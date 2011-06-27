@@ -1,0 +1,39 @@
+                                    motokai
+
+                      A monokai based dark ChatZilla motif
+
+                                       ~
+
+
+                                   A B O U T
+
+This motif for ChatZilla [1] is based on the monokai theme for TextMate [2]
+and, more specifically, the molokai theme for Vim [3].
+
+It uses CSS animations and transitions without relying on them. This means,
+that you can use it in virtually any version of ChatZilla.
+
+
+                            I N S T A L L A T I O N
+
+Download this package [4] and unpack it. Then open ChatZilla and go to
+    ChatZilla > Preferences > Global Settings > Appearance
+Under “Motifs” set the path of the current motif to
+    <motokai location>/motokai.css
+
+
+                     E R R O R S :   W H A T   T O   D O ?
+
+If you have spotted an error or incompatibility in the motif, please open a
+new issue at the project’s bug tracker [5]. You know about CSS? Great! I’m
+open to pull requests. Just fork the project, commit changes and queue a
+request.
+
+
+--
+
+[1] http://chatzilla.hacksrus.com/
+[2] 
+[3] http://www.vim.org/scripts/script.php?script_id=2340
+[4] http://github.com/Boldewyn/motokai
+[5] http://github.com/Boldewyn/motokai/issues
