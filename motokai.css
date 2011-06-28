@@ -223,6 +223,14 @@ treechildren {
 .msg-timestamp,
 .msg-user {
   background: #232526;
+}
+
+.msg-timestamp {
+  color: #888A85;
+  font-size: 90%;
+}
+
+.msg-user {
   color: #BCBCBC;
 }
 
