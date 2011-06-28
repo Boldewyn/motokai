@@ -312,6 +312,8 @@ treechildren {
 .msg[msg-type="QUIT"] .msg-data a.chatzilla-link {
   border-bottom: 1px solid;
   color: inherit;
+  -moz-transition-property: background;
+  -moz-transition-duration: .5s;
 }
 
 .msg[msg-type="JOIN"] .msg-data a.chatzilla-link:hover,
@@ -321,8 +323,6 @@ treechildren {
 .msg[msg-type="KICK"] .msg-data a.chatzilla-link:hover,
 .msg[msg-type="QUIT"] .msg-data a.chatzilla-link:hover {
   background: black;
-  -moz-transition-property: background;
-  -moz-transition-duration: .5s;
 }
 
 .msg[important="true"] .msg-user,
