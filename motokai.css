@@ -208,6 +208,8 @@ treechildren {
  */
 .msg-table {
   border-spacing: 0;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .msg-table td,
@@ -251,6 +253,10 @@ treechildren {
 
 .msg-table .msg-data {
   padding-left: 5px;
+}
+
+.msg-data img {
+  vertical-align: middle;
 }
 
 .msg[msg-type="JOIN"] .msg-data,
