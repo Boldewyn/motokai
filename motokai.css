@@ -85,7 +85,7 @@ a.chatzilla-link:hover {
   border: none;
   border-bottom: 1px solid #1B1D1E;
   -moz-border-radius: 0;
-  font-size: 11px;
+  font-size: .6875em;
   margin: 0;
   box-shadow: 0 9px 9px rgba(0,0,0,.3);
 }
@@ -208,8 +208,8 @@ treechildren {
  */
 .msg-table {
   border-spacing: 0;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 100%;
+  line-height: 1.25em;
   text-shadow: 0 1px black;
 }
 
